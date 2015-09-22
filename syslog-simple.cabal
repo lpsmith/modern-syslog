@@ -1,0 +1,28 @@
+name:                syslog-simple
+version:             0
+synopsis:            a high-performance client supporting modern syslog standards
+-- description:
+license:             BSD3
+license-file:        LICENSE
+author:              Leon P Smith
+maintainer:          leon@melding-monads.com
+copyright:           (c) 2015 Leon P Smith
+category:            System
+build-type:          Simple
+-- extra-source-files:
+cabal-version:       >=1.10
+
+library
+  exposed-modules:     Data.Syslog
+                       Data.Syslog.RFC5424
+                       Data.Syslog.RFC5424.Internal
+  other-modules:       Data.Syslog.RFC5424.Internal.Compat
+                       Data.Syslog.RFC5424.Internal.Time.Printer
+  build-depends:       base,
+                       bytestring,
+                       bytestring-builder,
+                       text >= 1.2,
+                       time,
+                       network
+  hs-source-dirs:      src
+  default-language:    Haskell2010
