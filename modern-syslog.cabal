@@ -1,4 +1,4 @@
-name:                syslog-simple
+name:                modern-syslog
 version:             0
 synopsis:            a high-performance client supporting modern syslog standards
 -- description:
