@@ -16,6 +16,8 @@ library
   exposed-modules:     Data.Syslog
                        Data.Syslog.RFC5424
                        Data.Syslog.RFC5424.Internal
+                       System.Syslog.Transport.Unix
+                       System.Syslog.Transport.Unix.Internal
   other-modules:       Data.Syslog.RFC5424.Internal.Compat
                        Data.Syslog.RFC5424.Internal.Time.Printer
   build-depends:       base,
